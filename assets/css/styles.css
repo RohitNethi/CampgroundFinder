@@ -3,10 +3,11 @@
   flex-wrap: wrap;
 }
 
-figure{
-    text-align: center;
-}
 
+.add-comment textarea{
+    margin-top:10px;
+   width:100%;
+}
 .image{
      width:100%;
      height:200px;
