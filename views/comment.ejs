@@ -1,0 +1,10 @@
+<% include partials/header %>
+<form action="/campgrounds/<%= campground_id %>/comments/<%= comment._id %>?_method=put" method="Post">
+        <div class="form-group">
+            <label for="comment[text]">Comment</label>
+            <input class="form-group" type="text" name="comment[text]" value="<%= comment.text %>"> </input>
+        </div>
+        <input class="btn btn-default" type="Submit" value="Submit"></input>
+    </form>
+    
+<% include partials/footer %>
