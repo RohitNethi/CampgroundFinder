@@ -12,7 +12,6 @@ var express         = require('express'),
     seedDB          = require('./seeds');
 
 //seedDB(); 
-console.log("pushing to ")
 
 //Passport Configuration
 app.use(require('express-session')({
