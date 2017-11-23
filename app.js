@@ -12,7 +12,7 @@ var express         = require('express'),
     seedDB          = require('./seeds');
 
 //seedDB(); 
-console.log("pushing to git");
+console.log("pushing to ")
 
 //Passport Configuration
 app.use(require('express-session')({
@@ -28,7 +28,8 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://rohitnethi:webdevmaster@ds115446.mlab.com:15446/recipebook");
+//mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static("assets"));
